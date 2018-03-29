@@ -1,0 +1,46 @@
+Structuration des données :
+---------------------------
+
+- info_general : Info générales :
+  - id
+  - name
+  - date
+  - location
+  - description
+- team : Liste des équipes :
+  - id
+  - info_gen_id
+  - team_num
+  - name
+  - ScoutMovement : unité scoute
+  - nb_scout   :nb de scout dans l'équipe
+- ScoutMovement
+  - id
+  - name
+  - number
+  - type
+  - description
+- scout_movement_type
+  - id
+  - type
+- pt_formulae
+  - id
+  - name
+  - formula // pour les regex : MIN/MAX/VAL/SUM/NB_SCOUT
+- chalenge_type : Liste des types d'épreuves
+  - id
+  - name
+  - pt_weighting (peut être négatif en pour d'éventuelles pénalités)
+- challenge : Liste des épreuves :
+  - id
+  - info_gen_id
+  - challenge_type_id
+  - name
+  - pt_weight_in_type
+  - pt_value
+  - pt_formulae_id
+- pt_cell
+  - id
+  - team_id
+  - challenge_id
+ 

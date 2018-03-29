@@ -1,0 +1,19 @@
+Affichage tableau :
+- feature : toujours garder visible le nom des équipes à gauche
+  - problème : alignement vertical différent de l'alignement horizontal
+  - solution : javascript - créer un cadre mirroir dont la taille et
+la position est fixée sur le cadre du tableau. A chaque mouvement
+mettre à jour la position verticale (mais pas la position horizontale)
+-feature : garder en mémoire le scroll du tableau lors d'une modification
+  - problème : cadre mirroir à garder fixe
+  - solution : javascript : garder en mémoire à chaque scroll la
+position de scroll horizontale et verticale de l'élément. Lors du
+chargement, commencer par copier le cadre mirroir avant de forcer le
+scroll du cadre
+
+- feature : tri horizontal des épreuves :
+  - nécéssite une refonte du tableau d'affichage, un tableau case par
+case donant ces propriétés...
+  -> créer encore un nouvel array....
+
+

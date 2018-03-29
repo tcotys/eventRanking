@@ -1,0 +1,47 @@
+Idées : (fini !)
+
+- Design :
+    Reprendre les idées de framework2000 :
+    - Menu toujours visible à gauche avec :
+      - Titre (nom de l'événement + "Classement" en sous-titre)
+      - tableau de points
+      - liste des équipes
+      - liste des épreuves
+      - liste des catégories d'épreuves
+      - ...
+      - Infos générales
+    - Fenètre principale :
+      - Titre reprenant le nom du menu séléctionné à gauche (ou pas, ...)
+      - Tableau d'affichage...
+    - tout garder dans une seule et unique page (pas de véritable lien !)
+- Rajoutter :
+    - Filtre qui permet de n'afficher qu'un type de challenges, ou une seule catégorie,...
+      - Crééer un tableau de sous-structures indiquant :
+        - show/hide
+        - type of element
+          - challengeType
+          - challenge
+          - category
+          - group
+          - team
+          - formula (good idea for debugging)
+          - displayType :
+            - Challenge
+            - ChallengeType (subtotals)
+            - Total
+        - element ids (string of ids separated by a come like "1,3,5,12")
+      - Fonction de filtre return 'true' si id ok 'false' sinon
+      - Le filtre se modifie à l'aide d'un pop-up.
+    - Un système d'ordre :
+      - Précharger le tableau d'affichage, et ensuite utiliser la fonction "Sort" de javascript
+      - On clique en haut d'une colone, et ça trie le menu selon les points de la colonne
+      - Si on clique sur le nom d'équipe, on trie par nom d'équipe, 
+      - Si sur le numéro d'équipe, par numéro...
+      - Avoir une idée pour les trier par catégorie (non-indispensable)
+      - Stocker la variable de tri en mémoire :
+        - 'teamNum'
+        - 'teamName'
+        - 'challenge1-...'
+        - 'subtotal1-...' (number of the challenge type)
+        - 'total'
+        
